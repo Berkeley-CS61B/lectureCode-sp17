@@ -28,7 +28,7 @@ public class IntList {
 
 	/** Returns the ith value in this list.*/
 	public int get(int i) {
-		if (i == 0){
+		if (i == 0) {
 			return this.first;
 		}
 		return this.rest.get(i-1);
