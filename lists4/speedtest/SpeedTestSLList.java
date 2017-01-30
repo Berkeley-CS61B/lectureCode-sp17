@@ -3,7 +3,7 @@ public class SpeedTestSLList {
 		SLList<Integer> L = new SLList<>();
 		int i = 0;
 		while (i < 100000) {
-			L.addLast(i);
+			L.addFirst(i);
 			i = i + 1;
 		}
 	}
