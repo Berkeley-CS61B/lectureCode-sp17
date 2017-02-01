@@ -1,17 +1,14 @@
 public class Sort {
-	/** Returns input strings in sorted order. 
-	  * Non-destructive. */
-	public static String[] Sort(String[] inputs) {
-		return inputs;
+	/** Sorts strings destructively. */
+	public static void sort(String[] x) {
 	}
 
-	/** Prints out all strings in inputs. */
-	public static void print(String[] inputs) {
+	/** Prints out all strings in x. */
+	public static void print(String[] x) {
 	}
 
-	/** Outputs the command line arguments 
-	  * in alphabetical order. */
+	/** Outputs the command line arguments
+	 * in alphabetical order. */
 	public static void main(String[] args) {
-		
 	}
-} 
+}
