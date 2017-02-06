@@ -1,7 +1,7 @@
 /* Represent a list of stuff, where all the "list" work is delegated
  * to a naked recursive data structure. */
 
-public class SLList<Blorp> implements List61B<Blorp>{
+public class SLList<Blorp> implements List61B<Blorp> {
     public class Node {
         public Blorp item;     /* Equivalent of first */
         public Node next; /* Equivalent of rest */
