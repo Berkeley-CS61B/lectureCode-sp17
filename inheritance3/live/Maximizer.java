@@ -8,6 +8,5 @@ public class Maximizer {
 			}
 		}
 		return items[maxDex];
-
 	}
 }
