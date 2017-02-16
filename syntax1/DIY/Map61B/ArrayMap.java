@@ -12,58 +12,34 @@ import static org.junit.Assert.*;
  * An array based implementation of the Map61B class.
  */
 public class ArrayMap<K, V> implements Map61B<K, V> {
-    private K[] keys;
-    private V[] values;
-    int size;
-
     public ArrayMap() {
-        keys = (K[]) new Object[100];
-        values = (V[]) new Object[100];
-        size = 0;
     }
 
     /** Returns the index of the given key if it exists,
      *  -1 otherwise. */
     private int keyIndex(K key) {
-        for (int i = 0; i < size; i += 1) {
-            if (keys[i].equals(key)) {
-                return i;
-            }
-        }
-        return -1;
+        return 0;
     }
 
 
     public boolean containsKey(K key) {
-        return keyIndex(key) > -1;
+        return false;
     }
 
     public void put(K key, V value) {
-        int keyIndex = keyIndex(key);
-        if (keyIndex > 0) {
-            values[keyIndex] = value;
-            return;
-        }
-        keys[size] = key;
-        values[size] = value;
-        size = size + 1;
+        
     }
 
     public V get(K key) {
-        int keyIndex = keyIndex(key);
-        return values[keyIndex];
+        return false;
     }
 
     public int size() {
-        return size;
+        return 0;
     }
 
     public List<K> keys() {
-        ArrayList<K> keylist = new ArrayList<>();
-        for (int i = 0; i < size; i += 1) {
-            keylist.add(keys[i]);
-        }
-        return keylist;
+        return null;
     }
 
     /*@Test
