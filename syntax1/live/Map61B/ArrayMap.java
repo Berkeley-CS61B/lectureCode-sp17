@@ -60,7 +60,7 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
 
     public List<K> keys() {
         List<K> keylist = new ArrayList<K>();
-        for (int i = 0; i < keys.length; i += 1) {
+        for (int i = 0; i < size; i += 1) { // thanks to Josh Zhang at UW for catching a bug on this line
             keylist.add(keys[i]);
         }
         return keylist;
