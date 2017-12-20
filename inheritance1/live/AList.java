@@ -6,12 +6,18 @@
 
 public class AList<Item> implements List61B<Item>{
 	/* the stored integers */
+
+
+
 	private Item[] items;
 	private int size;
 
 	private static int RFACTOR = 2;
 
     /** Creates an empty list. */
+
+
+    
     public AList() {
     	size = 0;
     	items = (Item[]) new Object[100];
